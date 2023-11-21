@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
@@ -9,8 +9,8 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   const [name, setName] = useState("");
-  const [amount, setAmount] = useState("");
-  const [quantity, setQuantity] = useState("");
+  const [amount, setAmount] = useState(null);
+  const [quantity, setQuantity] = useState(null);
   const [date, setDate] = useState("");
   const [expense, setExpense] = useState([]);
 
@@ -20,8 +20,11 @@ export default function App() {
 
   function handleDelete(e) {
     e.preventDefault();
-    if (window.confirm("Are you sure you want to delete all of your expenses?"))
+    if (
+      window.confirm("Are you sure you want to delete all of your expenses?")
+    ) {
       setExpense([]);
+    }
   }
 
   return (
@@ -43,3 +46,5 @@ export default function App() {
     </section>
   );
 }
+
+// ... (rest of the code remains the same)
