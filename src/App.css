@@ -136,6 +136,7 @@ button:focus-visible {
   }
 
   input[type="date"] {
+    margin-top: 2rem;
     padding-top: 1.5rem;
   }
 
