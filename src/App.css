@@ -128,6 +128,15 @@ button:focus-visible {
     flex: 1 1 160px;
   }
 
+  input[type="date"]::before {
+    color: rgba(255, 255, 255, 0.87);
+    content: "Enter date: ";
+  }
+
+  input[type="date"] {
+    padding-top: 1.5rem;
+  }
+
   form input {
     height: 5rem;
     margin-bottom: 0;
@@ -168,5 +177,12 @@ button:focus-visible {
   .footer .summary {
     padding-bottom: 1.4rem;
     padding-left: 7rem;
+  }
+}
+
+@media (max-width: 1370px) {
+  .footer .summary {
+    padding-bottom: 1.4rem;
+    padding-left: 6rem;
   }
 }

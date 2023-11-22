@@ -15,11 +15,12 @@ export default function App() {
   const [expense, setExpense] = useState([]);
 
   // useEffect(() => {
-  //   const storedExpense = JSON.parse(localStorage.getItem("expense"));
-  //   localStorage.setItem("expense", JSON.stringify(expense));
-  //   if (storedExpense) {
-  //     setExpense(storedExpense);
-  //   }
+  //   const data = window.localStorage.getItem("EXPENSE");
+  //   setExpense(JSON.parse(data));
+  // }, []);
+
+  // useEffect(() => {
+  //   window.localStorage.setItem("EXPENSE", JSON.stringify(expense));
   // }, [expense]);
 
   function handleSubmit(newData) {
