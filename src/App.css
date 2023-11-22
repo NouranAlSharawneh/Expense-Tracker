@@ -130,7 +130,7 @@ button:focus-visible {
 
   input[type="date"]::before {
     color: rgba(255, 255, 255, 0.87);
-    padding-top: 1.5rem;
+    padding-top: 5rem;
     content: "Enter date: ";
     padding-left: 2rem;
   }
