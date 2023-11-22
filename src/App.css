@@ -180,11 +180,33 @@ button:focus-visible {
     padding-bottom: 1.4rem;
     padding-left: 7rem;
   }
+
+  input[type="date"]::before {
+    color: rgba(255, 255, 255, 0.87);
+    padding-top: 5rem;
+    content: "Enter date: ";
+    padding-left: 2rem;
+  }
+
+  input[type="date"] {
+    padding-top: 1.5rem;
+  }
 }
 
 @media (max-width: 1370px) {
   .footer .summary {
     padding-bottom: 1.4rem;
     padding-left: 6rem;
+  }
+
+  input[type="date"]::before {
+    color: rgba(255, 255, 255, 0.87);
+    padding-top: 5rem;
+    content: "Enter date: ";
+    padding-left: 2rem;
+  }
+
+  input[type="date"] {
+    padding-top: 1.5rem;
   }
 }

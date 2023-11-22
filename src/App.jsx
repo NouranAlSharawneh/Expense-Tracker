@@ -14,14 +14,14 @@ export default function App() {
   const [date, setDate] = useState(null);
   const [expense, setExpense] = useState([]);
 
-  // useEffect(() => {
-  //   const data = window.localStorage.getItem("EXPENSE");
-  //   setExpense(JSON.parse(data));
-  // }, []);
+  useEffect(() => {
+    const data = window.localStorage.getItem("EXPENSE");
+    setExpense(data ? JSON.parse(data) : []);
+  }, []);
 
-  // useEffect(() => {
-  //   window.localStorage.setItem("EXPENSE", JSON.stringify(expense));
-  // }, [expense]);
+  useEffect(() => {
+    window.localStorage.setItem("EXPENSE", JSON.stringify(expense));
+  }, [expense]);
 
   function handleSubmit(newData) {
     setExpense((data) => [...data, newData]);
