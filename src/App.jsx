@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
@@ -11,7 +11,7 @@ export default function App() {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState(null);
   const [quantity, setQuantity] = useState(null);
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(null);
   const [expense, setExpense] = useState([]);
 
   function handleSubmit(newData) {
