@@ -3,7 +3,7 @@
 Welcome to the Expense Tracker GitHub repository! This simple React application helps you keep track of your expenses by allowing you to input the expense name, quantity, price, and date. It utilizes local storage to persist your expense data, ensuring that your information is saved even if you close the browser.
 
 # Live link:
-https://startling-kashata-8a134f.netlify.app/
+[https://startling-kashata-8a134f.netlify.app/](https://expense-ease.netlify.app/)
 
 # Features
 User-friendly Interface: Intuitive design makes it easy to input and manage your expenses.
