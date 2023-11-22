@@ -2,6 +2,9 @@
 
 Welcome to the Expense Tracker GitHub repository! This simple React application helps you keep track of your expenses by allowing you to input the expense name, quantity, price, and date. It utilizes local storage to persist your expense data, ensuring that your information is saved even if you close the browser.
 
+# Live link:
+https://startling-kashata-8a134f.netlify.app/
+
 # Features
 User-friendly Interface: Intuitive design makes it easy to input and manage your expenses.
 
@@ -14,28 +17,26 @@ Prerequisites
 Make sure you have Node.js and npm installed on your machine.
 
 Installation
-Clone the repository:
+1. Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/expense-tracker.git
-Navigate to the project directory:
-
-bash
-Copy code
+```
+git clone [https://github.com/your-username/expense-tracker.git]
+```
+2. Navigate to the project directory:
+```
 cd expense-tracker
-Install dependencies:
-
-bash
-Copy code
+```
+3. Install dependencies:
+```
 npm install
-Usage
+```
+
+# Usage
 Start the development server:
 
-bash
-Copy code
+```
 npm start
-Open your browser and go to http://localhost:3000 to use the Expense Tracker.
+```
 
 # How it Works
 Adding an Expense: Enter the expense name, quantity, price, and date in the provided fields. Click the "Add Expense" button to save the entry.
