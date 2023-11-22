@@ -50,7 +50,7 @@ export function SideBar({
         <input
           type="text"
           name="amount"
-          placeholder="Amount"
+          placeholder="Price"
           value={amount}
           onChange={(event) => setAmount(event.target.value)}
         />

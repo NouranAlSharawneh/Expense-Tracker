@@ -8,19 +8,19 @@ export function Main({ expense }) {
         ))}
       </div>
       <div className="grow1">
-        <h3>Quantity</h3>
-        {expense.map((item) => (
-          <p>{item.quantity}</p>
-        ))}
-      </div>
-      <div className="grow1">
         <h3>Name</h3>
         {expense.map((item) => (
           <p>{item.name}</p>
         ))}
       </div>
       <div className="grow1">
-        <h3>Amount</h3>
+        <h3>Quantity</h3>
+        {expense.map((item) => (
+          <p>{item.quantity}</p>
+        ))}
+      </div>
+      <div className="grow1">
+        <h3>Price</h3>
         {expense.map((item) => (
           <p>SAR {item.amount * item.quantity}</p>
         ))}
