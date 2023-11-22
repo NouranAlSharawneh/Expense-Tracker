@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { SideBar } from "./components/SideBar";
@@ -13,6 +13,14 @@ export default function App() {
   const [quantity, setQuantity] = useState(null);
   const [date, setDate] = useState(null);
   const [expense, setExpense] = useState([]);
+
+  // useEffect(() => {
+  //   const storedExpense = JSON.parse(localStorage.getItem("expense"));
+  //   localStorage.setItem("expense", JSON.stringify(expense));
+  //   if (storedExpense) {
+  //     setExpense(storedExpense);
+  //   }
+  // }, [expense]);
 
   function handleSubmit(newData) {
     setExpense((data) => [...data, newData]);
@@ -46,5 +54,3 @@ export default function App() {
     </section>
   );
 }
-
-// ... (rest of the code remains the same)
