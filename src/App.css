@@ -74,10 +74,10 @@ form {
   padding: 2rem;
   text-align: center;
   display: inline-block;
-  /* background-color: aqua; */
 }
 
 form input {
+  color: rgba(255, 255, 255, 0.87);
   background-color: #1a1a1a;
   font-family: monospace;
   border-radius: 8px;
@@ -86,10 +86,11 @@ form input {
   display: block;
   border: 0px;
   width: 15rem;
-  height: 2rem;
+  height: 3rem;
 }
 
 button {
+  color: rgba(255, 255, 255, 0.87);
   display: inline-block;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -114,4 +115,51 @@ button:focus-visible {
   padding: 10px;
   margin-top: 5rem;
   width: 15rem;
+}
+
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  form > * {
+    flex: 1 1 160px;
+  }
+
+  form input {
+    height: 5rem;
+    margin-bottom: 0;
+  }
+  .side--btn {
+    margin-top: 1.5rem;
+  }
+
+  .layout {
+    grid:
+      "header header" auto
+      "leftSide leftSide"
+      "body body" 1fr
+      "footer footer" auto
+      / auto 1fr auto;
+  }
+
+  .body {
+    padding: 1rem 3rem;
+  }
+
+  .footer .summary {
+    padding-left: 15rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer .summary span {
+    padding-left: 3rem;
+  }
+
+  .footer .summary button {
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
 }
