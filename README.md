@@ -20,7 +20,7 @@ Installation
 1. Clone the repository:
 
 ```
-git clone [https://github.com/your-username/expense-tracker.git]
+git clone [https://github.com/NouranAlSharawneh/Expense-Tracker]
 ```
 2. Navigate to the project directory:
 ```
